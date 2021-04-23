@@ -2620,8 +2620,8 @@ interface GamePlayerMp {
 	forceCleanup(cleanupFlags: number): void;
 	forceCleanupForAllThreadsWithThisName(name: string, cleanupFlags: number): void;
 	forceCleanupForThreadWithThisId(id: number, cleanupFlags: number): void;
-	getEntityIsFreeAimingAt(entity: Handle): boolean;
-	getTargetEntity(entity: Handle): boolean;
+	getEntityIsFreeAimingAt(entity: Handle|undefined): undefined|EntityMp|Handle|ObjectMp;
+	getTargetEntity(entity: Handle): ObjectMp|Handle;
 	getTimeSinceDroveAgainstTraffic(): number;
 	getTimeSinceDroveOnPavement(): number;
 	getTimeSinceHitPed(): number;
