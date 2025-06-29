@@ -26,6 +26,7 @@ interface Mp {
 	cameras: CameraMpPool;
 	checkpoints: CheckpointMpPool;
 	colshapes: ColshapeMpPool;
+    console: ConsoleMp;
 	discord: DiscordMp;
 	events: EventMpPool;
 	game: GameMp;
