@@ -3228,6 +3228,17 @@ interface GuiCursorMp {
 	show(freezeControls: boolean, state: boolean): void;
 }
 
+// Console MP types
+
+interface ConsoleMp {
+    clear(): void;
+    reset(): void;
+    logInfo(message: string, save?: boolean, saveAsync?: boolean): void;
+    logWarning(message: string, save?: boolean, saveAsync?: boolean): void;
+    logError(message: string, save?: boolean, saveAsync?: boolean): void;
+    logFatal(message: string, save?: boolean, saveAsync?: boolean): void;
+}
+
 // -------------------------------------------------------------------------
 // Pool MP types
 // -------------------------------------------------------------------------
