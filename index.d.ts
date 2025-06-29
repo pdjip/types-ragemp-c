@@ -84,6 +84,7 @@ interface GameMp {
 	zone: GameZoneMp;
 
 	invoke(hash: string, ...args: any[]): any;
+    invokeVector3(hash: string, ...args: any[]): Vector3Mp;
 	joaat(text: string): Hash;
 	joaat(textArray: string[]): Hash[];
 	wait(ms: number): void;
@@ -2050,6 +2051,8 @@ interface GameGameplayMp {
 	tan(p0: number): number;
 	terminateAllScriptsWithThisName(scriptName: string): void;
 	usingMissionCreator(toggle: boolean): void;
+
+    isGen9: boolean;
 }
 
 interface GameGraphicsMp {
